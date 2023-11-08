@@ -14,7 +14,6 @@ services:
       - html:/usr/share/nginx/html
       - certs:/etc/nginx/certs
       - ./custom.conf:/etc/nginx/conf.d/custom.conf:ro
-      - ./conf/firstspace.conf:/etc/nginx/conf.d/firstspace.conf
     labels:
       - "com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy=true"
 
